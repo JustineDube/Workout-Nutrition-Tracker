@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitTrack — Exercises</title>
+    <link rel="stylesheet" href="/src/styles/style.css" />
+  </head>
+  <body>
+    <header id="main-header"></header>
+
+    <main>
+      <div class="container">
+        <h1>Exercise Library</h1>
+        <p>Search by name, or filter by body part and equipment, then add exercises to your workout.</p>
+
+        <div class="search-bar">
+          <input type="search" id="exercise-search-input" placeholder="Search exercises (e.g. squat, curl)" />
+          <select id="bodypart-filter" aria-label="Filter by body part"></select>
+          <select id="equipment-filter" aria-label="Filter by equipment"></select>
+        </div>
+
+        <div class="exercise-grid" id="exercise-results"></div>
+        <div class="pagination" id="exercise-pagination"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>FitTrack &mdash; WDD 330 Final Project</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/exercises.js"></script>
+  </body>
+</html>

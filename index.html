@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitTrack — Dashboard</title>
+    <link rel="stylesheet" href="/src/styles/style.css" />
+  </head>
+  <body>
+    <header id="main-header"></header>
+
+    <main>
+      <div class="container">
+        <h1>Dashboard</h1>
+
+        <section class="summary-grid">
+          <div class="summary-stat">
+            <span class="stat-value" id="stat-streak">0</span>
+            <span class="stat-label">Day Streak</span>
+          </div>
+          <div class="summary-stat">
+            <span class="stat-value" id="stat-calories">0</span>
+            <span class="stat-label">Calories Today</span>
+          </div>
+          <div class="summary-stat">
+            <span class="stat-value" id="stat-meals">0</span>
+            <span class="stat-label">Meals Logged</span>
+          </div>
+          <div class="summary-stat">
+            <span class="stat-value" id="stat-last-workout">—</span>
+            <span class="stat-label">Last Workout</span>
+          </div>
+        </section>
+
+        <div class="card-grid card-grid--2">
+          <section class="card">
+            <div class="widget-title">
+              <h2>Calories Today</h2>
+            </div>
+            <div id="calorie-tracker"></div>
+            <div id="goal-form-container"></div>
+          </section>
+
+          <section class="card">
+            <div class="widget-title">
+              <h2>Macro Breakdown</h2>
+            </div>
+            <div id="macro-chart"></div>
+          </section>
+        </div>
+
+        <section class="card">
+          <div class="widget-title">
+            <h2>Quick Actions</h2>
+          </div>
+          <div class="form-row">
+            <a class="btn btn-primary" href="/workout.html">Log a Workout</a>
+            <a class="btn btn-secondary" href="/nutrition.html">Log a Meal</a>
+            <a class="btn btn-secondary" href="/exercises.html">Browse Exercises</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>FitTrack &mdash; WDD 330 Final Project</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

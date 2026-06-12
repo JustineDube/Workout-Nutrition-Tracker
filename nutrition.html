@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitTrack — Nutrition</title>
+    <link rel="stylesheet" href="/src/styles/style.css" />
+  </head>
+  <body>
+    <header id="main-header"></header>
+
+    <main>
+      <div class="container">
+        <h1>Nutrition</h1>
+
+        <section class="card">
+          <div class="widget-title">
+            <h2>Search Foods</h2>
+          </div>
+          <div class="search-bar">
+            <input type="search" id="food-search-input" placeholder="Search foods (e.g. banana, chicken breast)" />
+          </div>
+          <div id="food-results"></div>
+        </section>
+
+        <section class="card">
+          <div class="widget-title">
+            <h2>Food Diary</h2>
+            <input type="date" id="diary-date" aria-label="Diary date" />
+          </div>
+          <div id="food-diary"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>FitTrack &mdash; WDD 330 Final Project</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/nutrition.js"></script>
+  </body>
+</html>
