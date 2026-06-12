@@ -7,9 +7,12 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint "
   },
   "devDependencies": {
     "vite": "^8.0.16"
+  },
+  "dependencies": {
+    "eslint": "^10.4.1"
   }
 }
